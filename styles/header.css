@@ -10,6 +10,9 @@
     height: auto;
 }
 
+.nav-container a {
+    text-decoration: none;
+}
 
 .nav-buttons {
     height: auto;
@@ -98,9 +101,65 @@ ul li{
     font-weight: 600;
 }
 
+.btns {
+    display: flex; align-items: center; justify-content: center; column-gap: 3%;
+}
+
+.nav-buttons .itineraire-button {
+
+    z-index: 10;
+}
+
+.nav-buttons a {
+    z-index: 10;
+}
+
 @media screen and (max-width: 900px){
+
+
     .nav-container {
         justify-content: center;
+        gap: 10px;
+        padding: 10px 10px;
+    }
+
+    .nav-buttons {
+        position: relative;
+    }
+
+    .nav-buttons .itineraire-button {
+        position: fixed;
+        right: 0;
+        transform: rotate(90deg);
+        padding-top: 10px;
+        bottom: 57.5%;
+    }
+
+    .nav-buttons .appel-button {
+        position: fixed;
+        left: 0;
+        bottom: 55%;
+        transform: rotate(-90deg);
+        padding-top: 10px;
+    }
+
+    .nav-buttons .appel-button img{
+
+        transform: rotate(90deg);
+    }
+
+    .nav-buttons .itineraire-button img{
+
+        transform: rotate(-90deg);
+    }
+
+    .nav-buttons button{
+        font-size: 1.2rem;
+    }
+
+    .btns {
+        width: 30px;
+        column-gap: 20%;
     }
 
 }
