@@ -4,11 +4,15 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles/restaurant.css">
     <link rel="stylesheet" href="styles/generals.css">
     <link rel="stylesheet" href="styles/header.css">
-    <link rel="stylesheet" href="styles/slider.css">
+    <link rel="stylesheet" href="styles/restaurant.css">
+    <link rel="stylesheet" href="styles/horaires.css">
     <link rel="stylesheet" href="styles/menu.css">
+    <link rel="stylesheet" href="styles/contacts.css">
+    <link rel="stylesheet" href="styles/paiements.css">
+    <link rel="stylesheet" href="styles/slider.css">
+    <link rel="stylesheet" href="styles/footer.css">
     <title>Restaurant</title>
 </head>
 <body>
@@ -26,15 +30,15 @@
         </ul>
         <div class="nav-buttons">
             <a href="tel:+33781301358">
-                <div style="display: flex; align-items: center; justify-content: center; column-gap: 3%;">
+                <div class="appel-button btns">
                     <img src="images/appel.png" style="width: 20px;" alt="">
-                    <button>Appelez Maintenant</button>
+                    <button>Appelez</button>
                 </div>
             </a>
-            <a class="itineraire" target="_blank" href="
+            <a target="_blank" href="
                 https://www.google.com/maps/place/Metz/@49.1048197,6.1612144,13z/data=!3m1!4b1!4m5!3m4!1s0x4794dc1b6074b6a9:0x596be4b635bba669!8m2!3d49.1193089!4d6.1757156">
                 
-                <div style="display: flex; align-items: center; justify-content: center; text-decoration: none; column-gap: 3%;">
+                <div class="itineraire-button btns">
                     <img src="images/maps.png" alt="" style="width: 25px;">
                     <button>Itinéraire</button>
                 </div>
@@ -240,7 +244,7 @@
 
         </div>
 
-        <div class="right-side" id="contacts">
+        <div class="contacts" id="contacts">
             <h2>Contacts</h2>
             <p>
                 111, Rue de Lilas<br>57000 Metz
@@ -260,26 +264,21 @@
             
         </div>
             
-        <div style="background-color: beige; text-align: center;
-        padding: 30px; display: flex;
-        flex-direction: column; gap: 20px;">
+        <div class="paiements">
             <h2>Paiements acceptés</h2>
-            <p style="letter-spacing: 1px;">Mastercard, Visa, Amex, Sans Contacts, Espèces, Chèques</p>
-            <div style="display: flex; justify-content: space-around;
-            align-items: center;" class="paiements">
-                <img src="images/mastercard.png" alt="">
-                <img src="images/amex.png" alt="">
-                <img src="images/visa.png" alt="">
-                <img src="images/espece.png" alt="">
-                <img src="images/sans-contact.png" alt="">
-                <img src="images/cheque.png" alt="">
+            <p>Mastercard, Visa, Amex, Sans Contacts, Espèces, Chèques</p>
+            <div class="paiements-logos">
+                <img src="images/mastercard.png" alt="logo carte bancaire mastercard">
+                <img src="images/amex.png" alt="logo carte bancaire american express">
+                <img src="images/visa.png" alt="logo carte banacire visa">
+                <img src="images/espece.png" alt="logo argent en espèces">
+                <img src="images/sans-contact.png" alt="logo paiement sans contact">
+                <img src="images/cheque.png" alt="logo chèque de banque">
             </div>
         </div>
-        <div>
 
-        </div>
 
-        <h2 id="galeries" style="text-align: center; padding-top: 32px;">Galeries</h2>
+        <h2 id="galeries" >Galeries</h2>
         <div class=slideshow>
             <input name="slideshow" id=slide_img1 type="radio" checked>
             <input name="slideshow" id=slide_img2 type="radio">
@@ -340,7 +339,7 @@
 
     </div>
 
-    <footer style="background-color: #333; color: aliceblue; height: 150px; display: flex; align-items: center; justify-content: center;">
+    <footer>
         Tous droits réservés 2023
     </footer>
 
