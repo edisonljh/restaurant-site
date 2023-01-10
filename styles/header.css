@@ -132,13 +132,13 @@ ul li{
         right: 0;
         transform: rotate(90deg);
         padding-top: 10px;
-        bottom: 57.5%;
+        bottom: 52.5vh;
     }
 
     .nav-buttons .appel-button {
         position: fixed;
         left: 0;
-        bottom: 55%;
+        bottom: 50vh;
         transform: rotate(-90deg);
         padding-top: 10px;
     }
