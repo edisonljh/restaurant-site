@@ -10,10 +10,6 @@ body {
     font-family: "Poppins", Arial, Helvetica, sans-serif;
 }
 
-a {
-    text-decoration: none;
-}
-
 .btn {
     height: 80px;
     width: 80px;

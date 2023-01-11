@@ -4,11 +4,15 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles/restaurant.css">
     <link rel="stylesheet" href="styles/generals.css">
     <link rel="stylesheet" href="styles/header.css">
-    <link rel="stylesheet" href="styles/slider.css">
+    <link rel="stylesheet" href="styles/restaurant.css">
+    <link rel="stylesheet" href="styles/horaires.css">
     <link rel="stylesheet" href="styles/menu.css">
+    <link rel="stylesheet" href="styles/contacts.css">
+    <link rel="stylesheet" href="styles/paiements.css">
+    <link rel="stylesheet" href="styles/slider.css">
+    <link rel="stylesheet" href="styles/footer.css">
     <title>Restaurant</title>
 </head>
 <body>
@@ -26,15 +30,15 @@
         </ul>
         <div class="nav-buttons">
             <a href="tel:+33781301358">
-                <div style="display: flex; align-items: center; justify-content: center; column-gap: 3%;">
+                <div class="appel-button btns">
                     <img src="images/appel.png" style="width: 20px;" alt="">
-                    <button>Appelez Maintenant</button>
+                    <button>Appelez</button>
                 </div>
             </a>
-            <a class="itineraire" target="_blank" href="
+            <a target="_blank" href="
                 https://www.google.com/maps/place/Metz/@49.1048197,6.1612144,13z/data=!3m1!4b1!4m5!3m4!1s0x4794dc1b6074b6a9:0x596be4b635bba669!8m2!3d49.1193089!4d6.1757156">
                 
-                <div style="display: flex; align-items: center; justify-content: center; text-decoration: none; column-gap: 3%;">
+                <div class="itineraire-button btns">
                     <img src="images/maps.png" alt="" style="width: 25px;">
                     <button>Itinéraire</button>
                 </div>
@@ -49,46 +53,43 @@
     <div class="body-container">
 
         <div class="restaurant" id="restaurant">
+            <div class="restaurant-photo">
+                <img src="images/restaurant.jpg" alt="photo du restaurant">
+            </div>
             <h1>Restaurant L'exemple</h1>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque vitae illo incidunt voluptates velit. Optio inventore debitis possimus explicabo ipsa?</p>
-            <div class="restaurant-photo"><img src="images/restaurant.jpg" alt="photo du restaurant"></div>
+            <!--
+            
+            -->
         </div>
 
-        <div class="horaires" id="horaire">
-            <div class="horaires-grid">
-                <h2>Horaires d'ouverture</h2>
-                <ul class="jours">
-                    <li>Lundi</li>
-                    <li>Mardi</li>
-                    <li>Mercredi</li>
-                    <li>Jeudi</li>
-                    <li>Vendredi</li>
-                    <li>Samedi</li>
-                    <li>Dimanche</li>
-                </ul>
-                <ul class="heures">
-                    <li>
-                        12h00 - 14h00<br>19h00 - 22h00
-                    </li>
-                    <li>
-                        12h00 - 14h00<br>19h00 - 22h00
-                    </li>
-                    <li>
-                        12h00 - 14h00<br>19h00 - 22h00
-                    </li>
-                    <li>
-                        12h00 - 14h00<br>19h00 - 22h00
-                    </li>
-                    <li>
-                        12h00 - 14h00<br>19h00 - 22h00
-                    </li>
-                    <li>
-                        12h00 - 14h00<br>19h00 - 22h00
-                    </li>
-                    <li>
-                        12h00 - 14h00<br>19h00 - 22h00
-                    </li>
-                </ul>
+        <div style="display: flex;
+        align-items: center; justify-content: center; padding: 30px 50px; width: 100%;">
+            <div style="flex-basis: 200px; flex-grow: 1; flex-shrink: 1; max-width: 600px;">
+                <div class="horaires" id="horaire">
+                    <div class="titre-horaires">
+                        <h2>Horaires d'ouverture</h2>
+                    </div>
+                    <div class="jours">
+                        <p>Lundi</p>
+                        <p>Mardi</p>
+                        <p>Mercredi</p>
+                        <p>Jeudi</p>
+                        <p>Vendredi</p>
+                        <p>Samedi</p>
+                        <p>Dimanche</p>
+                    </div>
+                    <div class="heures">
+                        <p>12h00 - 14h00<br>19h00 - 22h00</p>
+                        <p>12h00 - 14h00<br>19h00 - 22h00</p>
+                        <p>12h00 - 14h00<br>19h00 - 22h00</p>
+                        <p>12h00 - 14h00<br>19h00 - 22h00</p>
+                        <p>12h00 - 14h00<br>19h00 - 22h00</p>
+                        <p>12h00 - 14h00<br>19h00 - 22h00</p>
+                        <p>12h00 - 14h00<br>19h00 - 22h00</p>
+                    </div>
+                    
+                </div>
             </div>
         </div>
 
@@ -240,52 +241,12 @@
 
         </div>
 
-        <div class="right-side" id="contacts">
-            <h2>Contacts</h2>
-            <p>
-                111, Rue de Lilas<br>57000 Metz
-            </p>
-            <p>
-                Tel: <strong>03 87 XX XX XX</strong>
-            </p>
-            <h2>
-                Moyen d'accès
-            </h2>
-            <div class="parking">
-                <img  style="width: 40px;" src="images/parking.jpg" alt="logo parking">
-                <p>Parking</p>
-            </div> 
-            <p>Bus</p>
-            <p>&#9855; Accès personne à mobilité réduite</p>
-            
-        </div>
-            
-        <div style="background-color: beige; text-align: center;
-        padding: 30px; display: flex;
-        flex-direction: column; gap: 20px;">
-            <h2>Paiements acceptés</h2>
-            <p style="letter-spacing: 1px;">Mastercard, Visa, Amex, Sans Contacts, Espèces, Chèques</p>
-            <div style="display: flex; justify-content: space-around;
-            align-items: center;" class="paiements">
-                <img src="images/mastercard.png" alt="">
-                <img src="images/amex.png" alt="">
-                <img src="images/visa.png" alt="">
-                <img src="images/espece.png" alt="">
-                <img src="images/sans-contact.png" alt="">
-                <img src="images/cheque.png" alt="">
-            </div>
-        </div>
-        <div>
-
-        </div>
-
-        <h2 id="galeries" style="text-align: center; padding-top: 32px;">Galeries</h2>
+        <h2 id="galeries" >Galeries</h2>
         <div class=slideshow>
             <input name="slideshow" id=slide_img1 type="radio" checked>
             <input name="slideshow" id=slide_img2 type="radio">
             <input name="slideshow" id=slide_img3 type="radio">
-            <input name="slideshow" id=slide_img4 type="radio">
-            <input name="slideshow" id=slide_img5 type="radio">  
+            <input name="slideshow" id=slide_img4 type="radio"> 
             <div class="cadre-ratio">
             <ul>
             <li class=img1>
@@ -300,9 +261,6 @@
             <li class=img4>
                 <img src="images/resto4.jpg" alt>
             </li>
-            <li class=img5>
-                <img src="images/resto5.jpg" alt>
-            </li>
             </ul>
             </div>
             <div class=precedent>
@@ -310,14 +268,12 @@
                 <label class=img2 for=slide_img2></label>
                 <label class=img3 for=slide_img3></label>
                 <label class=img4 for=slide_img4></label>
-                <label class=img5 for=slide_img5></label>
             </div>
             <div class=suivant>
                 <label class=img1 for=slide_img1></label>
                 <label class=img2 for=slide_img2></label>
                 <label class=img3 for=slide_img3></label>
                 <label class=img4 for=slide_img4></label>
-                <label class=img5 for=slide_img5></label>
             </div>
             <div class=puces>
                 <label class="img1" for=slide_img1>
@@ -332,15 +288,52 @@
                 <label class="img4" for=slide_img4>
                     <span class=actif_puces></span>
                 </label>
-                <label class="img5" for=slide_img5>
-                    <span class=actif_puces></span>
-                </label>
             </div> 
         </div>	
 
+        <div class="paiements">
+            <h2>Paiements acceptés</h2>
+            <p>Mastercard, Visa, American Express, Sans Contacts, Espèces, Chèques</p>
+            <div class="paiements-logos">
+                <img src="images/mastercard.png" alt="logo carte bancaire mastercard">
+                <img src="images/amex.png" alt="logo carte bancaire american express">
+                <img src="images/visa.png" alt="logo carte banacire visa">
+                <img src="images/espece.png" alt="logo argent en espèces">
+                <img src="images/sans-contact.png" alt="logo paiement sans contact">
+                <img src="images/cheque.png" alt="logo chèque de banque">
+            </div>
+        </div>
+
+        <div style="display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;">
+            <div class="contacts" id="contacts" style="flex-grow: 1; flex-basis: 400px;">
+                <h2>Contacts</h2>
+                <p>
+                    111, Rue de Lilas<br>57000 Metz
+                </p>
+                <p>
+                    Tel: <strong>03 87 XX XX XX</strong>
+                </p>
+                <h2>
+                    Moyen d'accès
+                </h2>
+                <div class="parking">
+                    <img  style="width: 40px;" src="images/parking.jpg" alt="logo parking">
+                    <p>Parking</p>
+                </div> 
+                <p>Bus</p>
+                <p>&#9855; Accès personne à mobilité réduite</p>
+            </div>
+            <div style="flex-grow: 1; flex-basis: 500px;">
+                <iframe style="width: 100%; border: none; border-radius: 5px;" src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d5222.839193621051!2d6.178680524209911!3d49.116665707728906!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sfr!2sfr!4v1673374863731!5m2!1sfr!2sfr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+
     </div>
 
-    <footer style="background-color: #333; color: aliceblue; height: 150px; display: flex; align-items: center; justify-content: center;">
+    <footer>
         Tous droits réservés 2023
     </footer>
 

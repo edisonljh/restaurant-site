@@ -11,6 +11,7 @@
 }
 
 
+
 .nav-buttons {
     height: auto;
     display: flex;
@@ -18,8 +19,20 @@
     column-gap: 3%;
 }
 
+.nav-buttons button {
+    box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.1);
+    animation: battement 2s infinite cubic-bezier(.77, 0, 0, 1);
+    text-decoration: none;
+}
+
+@keyframes battement {
+    to {
+      box-shadow: 0 0 0 20px rgba(0, 0, 0, 0.1);
+    }
+  }
+
 .nav-buttons button{
-    color: rgb(66, 66, 66);
+    color: rgb(255, 255, 255);
     text-decoration: none;
     padding: 8px 16px;
     margin-left: 0px;
@@ -27,8 +40,8 @@
     border: none;
     border-radius: 100px;
     font-weight: 600;
-    background-color: rgb(120, 255, 138);
-    box-shadow: 0px 0px 7px rgba(255, 255, 255, 0.3);
+    background-color: #25D366;
+    box-shadow: 0px 0px 5px rgba(255, 255, 255, 0.2);
     transition: all 0.3s ease-in;
 }
 
@@ -98,9 +111,65 @@ ul li{
     font-weight: 600;
 }
 
+.btns {
+    display: flex; align-items: center; justify-content: center; column-gap: 3%;
+}
+
+.nav-buttons .itineraire-button {
+
+    z-index: 10;
+}
+
+.nav-buttons a {
+    z-index: 10;
+}
+
 @media screen and (max-width: 900px){
+
+
     .nav-container {
         justify-content: center;
+        gap: 10px;
+        padding: 10px 10px;
+    }
+
+    .nav-buttons {
+        position: relative;
+    }
+
+    .nav-buttons .itineraire-button {
+        position: fixed;
+        right: 0;
+        transform: rotate(90deg);
+        padding-top: 8px;
+        bottom: 52.5vh;
+    }
+
+    .nav-buttons .appel-button {
+        position: fixed;
+        left: 0;
+        bottom: 50vh;
+        transform: rotate(-90deg);
+        padding-top: 8px;
+    }
+
+    .nav-buttons .appel-button img{
+
+        transform: rotate(90deg);
+    }
+
+    .nav-buttons .itineraire-button img{
+
+        transform: rotate(-90deg);
+    }
+
+    .nav-buttons button{
+        font-size: 1.2rem;
+    }
+
+    .btns {
+        width: 30px;
+        column-gap: 20%;
     }
 
 }

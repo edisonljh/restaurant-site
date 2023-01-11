@@ -1,0 +1,39 @@
+.body-container .horaires {
+    display: grid;
+    grid-template-columns: 1fr  1fr;
+    grid-template-rows: 100px 1fr;
+
+}
+
+.horaires .titre-horaires {
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+
+
+.jours, .heures, .titre-horaires {
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    row-gap: 20px;
+}
+
+
+@media screen and (max-width: 365px) {
+    .horaires h2 {
+        font-size: 2vh;
+    }
+    .horaires p {
+        font-size: 1.5vh;
+    }
+}
+
+@media screen and (max-width: 300px) {
+    .horaires h2 {
+        font-size: 1.6vh;
+    }
+    .horaires p {
+        font-size: 1.2vh;
+    }
+}
